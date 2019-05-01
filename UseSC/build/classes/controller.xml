@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc-configuration>
+<interceptor name="log" class="water.ustc.interceptor.LogInterceptor"
+            predo="PreAction" afterdo="afterAction">
+            </interceptor>
+    <controller>
+        <action name="login" class="water.ustc.action.LoginAction" method="handleLogin">
+                <interceptor-ref name="log"></interceptor-ref>
+            <result name="success" type="foward" value="success_view.xml"></result>
+            <result name="failure" type="redirect" value="LoginAction.html"></result>
+        </action>
+        <action name="regist" class="water.ustc.action.RegisterAction" method="handleRegist">
+                <interceptor-ref name="log"></interceptor-ref>
+            <result name="success" type="foward" value="Welcome.html"></result>
+            <result name="failure" type="redirect" value="RegistAction.html"></result>
+        </action>
+    </controller>
+</sc-configuration>

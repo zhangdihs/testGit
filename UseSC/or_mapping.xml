@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OR-Mappings>
+     <jdbc>
+	     <property>
+	          <name>driver</name>
+	          <value>com.mysql.cj.jdbc.Driver</value>
+	      </property>
+	      <property>
+	           <name>url</name>
+	           <value>jdbc:mysql://localhost:3306/ss?serverTimezone=GMT%2B8</value>
+	       </property>
+	       <property>
+		       <name>username</name>
+		       <value>root</value>
+	       </property>
+	       <property>
+		       <name>password</name>
+		       <value>199607</value>
+	       </property>
+      </jdbc>
+      <class>
+	      <name>User</name>
+	      <table>my</table>
+	      <id>
+	         <name>userId</name>
+	       </id>
+	       <property>
+		       <name>userName</name>
+		       <column>userName</column>
+		       <type>String</type>
+		       <lazy>false</lazy>
+	       </property>
+	       <property>
+		       <name>userPass</name>
+		       <column>userPass</column>
+		       <type>String</type>
+		       <lazy>false</lazy>
+	       </property>
+       <!-- other properties -->
+       </class>
+       <!-- other class -->
+       </OR-Mappings>
+       
+       
+      
+       
+         
+         
+        
